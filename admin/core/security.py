@@ -1,6 +1,5 @@
 import hashlib
 import hmac
-import os
 from datetime import datetime, timedelta, UTC
 from typing import Optional
 
@@ -9,10 +8,7 @@ try:
 except ImportError:
     jwt = None  # if you don't have it yet, create_access_token will raise
 
-
-SECRET_KEY = os.getenv("SECRET_KEY", "change-me")
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+from .config import settings
 
 
 def get_password_hash(password: str) -> str:
@@ -41,8 +37,12 @@ def create_access_token(
 
     to_encode = data.copy()
     expire = datetime.now(UTC) + (
-        expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        expires_delta or timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     )
     to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    encoded_jwt = jwt.encode(
+        to_encode,
+        settings.SECRET_KEY,
+        algorithm=settings.ALGORITHM,
+    )
     return encoded_jwt
