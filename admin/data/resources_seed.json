@@ -1,0 +1,79 @@
+[
+  {
+    "name": "MDPH Paris",
+    "resource_type": "administration",
+    "description": "Aides et reconnaissance du handicap",
+    "handicap_type": "Tous types",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0180974494",
+    "email": "contact@mdph75.fr",
+    "website": "https://www.paris.fr/mdph"
+  },
+  {
+    "name": "APF France Handicap",
+    "resource_type": "association",
+    "description": "Accompagnement des personnes handicapées et de leur famille",
+    "handicap_type": "Mobilité réduite",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0140786900",
+    "email": "contact@apf.asso.fr",
+    "website": "https://www.apf-francehandicap.org"
+  },
+  {
+    "name": "Association Valentin Haüy",
+    "resource_type": "association",
+    "description": "Aide aux personnes déficientes visuelles",
+    "handicap_type": "Handicap sensoriel",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0144649017",
+    "email": "contact@avh.asso.fr",
+    "website": "https://www.avh.asso.fr"
+  },
+  {
+    "name": "UNISDA",
+    "resource_type": "association",
+    "description": "Fédération pour les personnes sourdes",
+    "handicap_type": "Handicap auditif",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0142409381",
+    "email": "contact@unisda.org",
+    "website": "https://www.unisda.org"
+  },
+  {
+    "name": "Centre Jacques Cartier",
+    "resource_type": "centre",
+    "description": "Accueil enfants handicap moteur",
+    "handicap_type": "Mobilité réduite",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0145654321",
+    "email": "accueil@cjc.fr",
+    "website": "https://www.centre-jc.fr"
+  },
+  {
+    "name": "INJA",
+    "resource_type": "centre",
+    "description": "Scolarité et accompagnement déficience visuelle",
+    "handicap_type": "Handicap sensoriel",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0156580000",
+    "email": "contact@inja.fr",
+    "website": "https://www.inja.fr"
+  },
+  {
+    "name": "INJS Paris",
+    "resource_type": "centre",
+    "description": "Institut pour jeunes sourds",
+    "handicap_type": "Handicap auditif",
+    "region": "Île-de-France",
+    "city": "Paris",
+    "phone": "0153720000",
+    "email": "accueil@injs-paris.fr",
+    "website": "https://www.injs-paris.fr"
+  }
+]

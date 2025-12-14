@@ -6,6 +6,8 @@ from .child_router import router as child_router
 from .donation_router import router as donation_router
 from .solutions import router as solutions_router
 from .users_router import router as users_router
+from .resource_router import router as resource_router
+from .admin_stats import router as admin_stats_resources_router
 
 admin_api_router = APIRouter()
 admin_api_router.include_router(admin_routes_router)
@@ -14,3 +16,5 @@ admin_api_router.include_router(donation_router)
 admin_api_router.include_router(assistance_router)
 admin_api_router.include_router(child_router)
 admin_api_router.include_router(solutions_router)
+admin_api_router.include_router(resource_router)
+admin_api_router.include_router(admin_stats_resources_router)
